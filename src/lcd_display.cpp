@@ -6,7 +6,7 @@ LCDDisplay::LCDDisplay(LiquidCrystal_I2C &lcd) : lcd(lcd) {}
 
 void LCDDisplay::init()
 {
-    lcd.begin(16, 2); // Initialize LCD with 16 columns and 2 rows
+    lcd.init(); // Use init() instead of begin()
     lcd.backlight();
 }
 
